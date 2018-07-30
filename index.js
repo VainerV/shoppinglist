@@ -13,6 +13,7 @@ function addNewItem(){
     $("#js-shopping-list-form").on("submit", event => {
         event.preventDefault();
         buildANewItem(getTheItemName());
+        checkAndUcheckItem();
         clearTheForm();
         
        
